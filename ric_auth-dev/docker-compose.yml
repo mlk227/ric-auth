@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  auth-db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=ric_auth
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - ric
+
+  auth-rabbit:
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=mypass
+    image: rabbitmq:latest
+    networks:
+      - ric
+
+  auth-redis:
+    image: redis:alpine
+    networks:
+      - ric
+
+  auth-nginx:
+    image: nginx
+    networks:
+      - ric
+    depends_on:
+      - auth-backend
+    restart: always
+
+  auth-backend:
+    environment:
+      - DJANGO_SETTINGS_MODULE=ric_auth.settings.development
+      - DB_HOST=auth-db
+      - DB_PORT=5432
+      - RESET_DB=${RESET_DB}
+      - PRINT_SQL=${PRINT_SQL}
+      - API_BASE_URL=${API_BASE_URL}
+    networks:
+      - ric
+    depends_on:
+      - auth-db
+    restart: always
+
+  auth-celery:
+    command: celery -A ric_auth.celery worker -l info
+    networks:
+      - ric
+    depends_on:
+      - auth-db
+      - auth-redis
+      - auth-rabbit
+    restart: always
+
+  auth-celery-beat:
+    command: celery -A ric_auth.celery beat -l info
+    networks:
+      - ric
+    depends_on:
+      - auth-db
+      - auth-redis
+      - auth-rabbit
+
+networks:
+  ric:
+    name: ric
+    driver: bridge

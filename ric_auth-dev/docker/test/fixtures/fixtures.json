@@ -1,0 +1,507 @@
+[
+{
+    "model": "profiles.organization",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-09-10T02:07:00.817Z",
+        "updated_by": null,
+        "updated_at": "2020-09-10T02:11:49.375Z",
+        "name": "Rewardz",
+        "slug": "rewardz"
+    }
+},
+{
+    "model": "profiles.organization",
+    "pk": 2,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-09-10T02:11:57.760Z",
+        "updated_by": null,
+        "updated_at": "2020-09-10T02:11:57.760Z",
+        "name": "BOJ",
+        "slug": "boj"
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$oOYABYSVpjza$745A4HjtL40znJFMve+mNmDsqYfCOJive2oRAt/IY28=",
+        "last_login": "2021-02-16T05:16:07Z",
+        "is_superuser": true,
+        "username": "dev@rewardz.sg",
+        "first_name": "dev",
+        "last_name": "rewardz",
+        "email": "dev@rewardz.sg",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-10T02:08:43Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-09-10T02:08:43.739Z",
+        "updated_by": null,
+        "updated_at": "2021-02-16T05:23:33.410Z",
+        "organization": 1,
+        "katakana_name": "dev",
+        "hiragana_name": "rewardz",
+        "bio": "I am very passionate about biking. I also enjoy playing badminton during my spare time.",
+        "avatar": "user_avatars/2020/10/15/avatar_nBCclSQ.png",
+        "login_counter": 0,
+        "registration_date": "2020-01-18",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$oOYABYSVpjza$745A4HjtL40znJFMve+mNmDsqYfCOJive2oRAt/IY28=",
+        "last_login": "2020-09-15T05:31:41Z",
+        "is_superuser": true,
+        "username": "dev@boj.jp",
+        "first_name": "dev",
+        "last_name": "boj",
+        "email": "dev@boj.jp",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-10T02:08:43Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-09-10T02:08:43.739Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T14:17:37.548Z",
+        "organization": 1,
+        "katakana_name": "boj-dev",
+        "hiragana_name": "dev-boj",
+        "bio": "I love travelling, visiting new places, and trying out new food.",
+        "avatar": "user_avatars/2020/10/15/avatar.png",
+        "login_counter": 0,
+        "registration_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$oOYABYSVpjza$745A4HjtL40znJFMve+mNmDsqYfCOJive2oRAt/IY28=",
+        "last_login": "2020-09-15T05:31:41Z",
+        "is_superuser": false,
+        "username": "dev3@rewardz.sg",
+        "first_name": "dev3",
+        "last_name": "rewardz3",
+        "email": "dev3@rewardz.sg",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-10T02:08:43Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-09-10T02:08:43.739Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T14:20:35.980Z",
+        "organization": 2,
+        "katakana_name": "dev3",
+        "hiragana_name": "rewardz3",
+        "bio": "I like to make new friends and like to discuss current affairs. I am very honest and sincere towards my work.",
+        "avatar": "user_avatars/2020/11/18/3_avatar.jpg",
+        "login_counter": 0,
+        "registration_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$NkOb3TeJ5pOt$L+0V66STK7a8sB1+0E5HOMR8ajIS+OW3P7RNZB8PiqI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "be1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-28T00:33:43.491Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:33:43.690Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:33:43.690Z",
+        "organization": 1,
+        "katakana_name": "",
+        "hiragana_name": "",
+        "bio": null,
+        "avatar": "",
+        "login_counter": 0,
+        "registration_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$sRsON0jCo0Kh$EIMGBOXLE4xqJMNgqiOPpOMyqgYUKT+54fkCVZ/Dqow=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "fe1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-28T00:34:57.734Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:34:57.914Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:34:57.914Z",
+        "organization": 1,
+        "katakana_name": "",
+        "hiragana_name": "",
+        "bio": null,
+        "avatar": "",
+        "login_counter": 0,
+        "registration_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.customuser",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$9qRGNAKs0O0S$OTqPiFXhoqDCOc5NbbSuCumMDDoevy6QXjWNzM8/560=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "qa1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-28T00:35:20.286Z",
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:35:20.475Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:35:20.475Z",
+        "organization": 1,
+        "katakana_name": "",
+        "hiragana_name": "",
+        "bio": null,
+        "avatar": "",
+        "login_counter": 0,
+        "registration_date": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "profiles.group",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-10-21T01:33:57.410Z",
+        "updated_by": null,
+        "updated_at": "2020-10-21T01:33:57.411Z",
+        "name": "Group name 1",
+        "code": "code",
+        "hierarchy": 1,
+        "organization": 1,
+        "parent_group": null
+    }
+},
+{
+    "model": "profiles.group",
+    "pk": 2,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-25T03:04:06.410Z",
+        "updated_by": null,
+        "updated_at": "2021-01-25T03:04:06.410Z",
+        "name": "tech",
+        "code": "tech",
+        "hierarchy": 1,
+        "organization": 1,
+        "parent_group": null
+    }
+},
+{
+    "model": "profiles.group",
+    "pk": 3,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:28:21.667Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:28:21.667Z",
+        "name": "front end",
+        "code": "fe",
+        "hierarchy": 2,
+        "organization": 1,
+        "parent_group": 2
+    }
+},
+{
+    "model": "profiles.group",
+    "pk": 4,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:28:35.155Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:28:35.155Z",
+        "name": "backend",
+        "code": "be",
+        "hierarchy": 2,
+        "organization": 1,
+        "parent_group": 2
+    }
+},
+{
+    "model": "profiles.group",
+    "pk": 5,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:28:52.687Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:28:52.687Z",
+        "name": "qa team",
+        "code": "qa",
+        "hierarchy": 2,
+        "organization": 1,
+        "parent_group": 2
+    }
+},
+{
+    "model": "profiles.role",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-12-30T08:03:27.983Z",
+        "updated_by": null,
+        "updated_at": "2020-12-30T08:03:27.983Z",
+        "organization": 1,
+        "name": "sample role name",
+        "role_type": 0
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-12-30T08:03:55.289Z",
+        "updated_by": null,
+        "updated_at": "2020-12-30T11:16:32.169Z",
+        "user": 1,
+        "group": 1,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 2,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-12-30T11:44:06.642Z",
+        "updated_by": null,
+        "updated_at": "2020-12-30T11:44:06.642Z",
+        "user": 2,
+        "group": 1,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 3,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-12-30T11:44:44.672Z",
+        "updated_by": null,
+        "updated_at": "2020-12-30T11:44:44.672Z",
+        "user": 3,
+        "group": 1,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 4,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-25T03:04:57.809Z",
+        "updated_by": null,
+        "updated_at": "2021-01-25T03:04:57.809Z",
+        "user": 1,
+        "group": 2,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 5,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:33:43.693Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:33:43.693Z",
+        "user": 4,
+        "group": 4,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 6,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:34:57.918Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:34:57.918Z",
+        "user": 5,
+        "group": 3,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.usergrouprole",
+    "pk": 7,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2021-01-28T00:35:20.478Z",
+        "updated_by": null,
+        "updated_at": "2021-01-28T00:35:20.478Z",
+        "user": 6,
+        "group": 5,
+        "role": 1
+    }
+},
+{
+    "model": "profiles.passwordreminderquestions",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-16T05:31:43.049Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T12:26:01.679Z",
+        "organization": null,
+        "question": "What is your favorite movie title?"
+    }
+},
+{
+    "model": "profiles.passwordreminderquestions",
+    "pk": 2,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-16T05:32:25.775Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T12:29:45.254Z",
+        "organization": null,
+        "question": "What is your mother's maiden name?"
+    }
+},
+{
+    "model": "profiles.passwordreminderquestions",
+    "pk": 3,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-16T05:33:06.804Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T12:30:52.476Z",
+        "organization": null,
+        "question": "What was the name of your first pet?"
+    }
+},
+{
+    "model": "profiles.passwordreminderquestions",
+    "pk": 4,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-20T12:28:26.305Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T12:31:15.073Z",
+        "organization": null,
+        "question": "What is your favorite sports team name?"
+    }
+},
+{
+    "model": "profiles.passwordreminderquestions",
+    "pk": 5,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-20T12:28:49.517Z",
+        "updated_by": null,
+        "updated_at": "2020-11-20T12:28:49.517Z",
+        "organization": null,
+        "question": "What is your motto?"
+    }
+},
+{
+    "model": "profiles.passwordreminder",
+    "pk": 1,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-16T05:37:03.568Z",
+        "updated_by": null,
+        "updated_at": "2020-11-21T18:42:51.347Z",
+        "user": 1,
+        "question": 4,
+        "answer": "India"
+    }
+},
+{
+    "model": "profiles.passwordreminder",
+    "pk": 2,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-16T05:38:40.368Z",
+        "updated_by": null,
+        "updated_at": "2020-11-21T18:43:14.264Z",
+        "user": 2,
+        "question": 5,
+        "answer": "If you can dream it, you can achieve it"
+    }
+},
+{
+    "model": "profiles.passwordreminder",
+    "pk": 3,
+    "fields": {
+        "is_deleted": false,
+        "created_by": null,
+        "created_at": "2020-11-21T18:47:56.518Z",
+        "updated_by": null,
+        "updated_at": "2020-11-21T18:47:56.518Z",
+        "user": 3,
+        "question": 1,
+        "answer": "DDLJ"
+    }
+}
+]

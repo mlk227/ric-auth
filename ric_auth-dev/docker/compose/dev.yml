@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  auth-rabbit:
+    ports:
+      - "5673:5672" # we forward this port because it's useful for debugging
+      - "15673:15672" # here, we can access rabbitmq management plugin
+
+  auth-redis:
+    ports:
+      - "6380:6379"
+    command: redis-server --requirepass sOmE_sEcUrE_pAsS
+
+  auth-nginx:
+    ports:
+      - "10082:80"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./static:/usr/share/nginx/djangodocker/static:ro
+      - ./docker/test/media:/usr/share/nginx/djangodocker/media:ro
+
+  auth-backend:
+    image: ric_auth_backend
+    volumes:
+      - ./:/app
+      - ./static:/mnt/shared_volumes/static:rw
+      - ./docker/test/media:/mnt/shared_volumes/media:rw
+
+  auth-celery:
+    image: ric_auth_backend
+    volumes:
+      - ./:/app
+
+  auth-celery-beat:
+    image: ric_auth_backend
+    volumes:
+      - ./:/app
